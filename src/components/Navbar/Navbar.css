@@ -41,6 +41,11 @@
 .nav-link{
     transition: var(--transition);
 }
+
+.nav-link.blue {
+    color: #1792d9;
+  }
+
 .nav-link:hover{
     color: var(--purple-color);
 }

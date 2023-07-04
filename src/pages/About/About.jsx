@@ -16,7 +16,7 @@ const About = () => {
           </div>
           <div className='about-text'>
             <h2 className='about-title fs-26 ls-1'>investment</h2>
-            <p className='fs-17'> </p>
+            <p className='fs-17'> whats uuppp</p>
           </div>
         </div>
       </div>

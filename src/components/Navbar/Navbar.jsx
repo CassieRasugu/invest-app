@@ -26,16 +26,16 @@ const Navbar = () => {
         <div className={toggleMenu ? "navbar-collapse show-navbar-collapse" : "navbar-collapse"}>
           <ul className = "navbar-nav">
             <li className='nav-item'>
-              <Link to = "welcome" className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>Home</Link>
+              <Link to = "welcome" className='nav-link blue text-uppercase  fs-22 fw-6 ls-1'>Home</Link>
             </li>
             <li className='nav-item'>
-              <Link to = "signup" className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>SignUp</Link>
+              <Link to = "signup" className='nav-link blue text-uppercase fs-22 fw-6 ls-1'>SignUp</Link>
             </li>
             <li className='nav-item'>
-              <Link to = "about" className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>About</Link>
+              <Link to = "about" className='nav-link blue text-uppercase  fs-22 fw-6 ls-1'>About</Link>
             </li>
             <li className='nav-item'>
-              <Link to = "profile" className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>Userprofile</Link>
+              <Link to = "profile" className='nav-link blue text-uppercase  fs-22 fw-6 ls-1'>Userprofile</Link>
             </li>
           </ul>
         </div>
