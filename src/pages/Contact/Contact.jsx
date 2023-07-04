@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 
-const ContactPage = () => {
+const Contact = () => {
   return (
     <section className="contact-page">
       <div className="container">
@@ -32,4 +32,4 @@ const ContactPage = () => {
   );
 }
 
-export default Contact;
+export default Contact
