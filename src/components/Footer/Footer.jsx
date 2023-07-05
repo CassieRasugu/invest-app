@@ -20,7 +20,7 @@ const Footer = () => {
               <i className="fab fa-twitter"></i>
             </a>
           </div>
-          <p className="footer-text">© 2023 Your Company. All rights reserved.</p>
+          <p className="footer-text">© 2023 INVEST Company. All rights reserved.</p>
         </div>
       </div>
     </footer>
