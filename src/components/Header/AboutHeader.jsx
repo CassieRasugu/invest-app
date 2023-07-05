@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from "../Navbar/Navbar";
-import aboutHeaderImg from "../../images/about-header.jpg";
 import "./AboutHeader.css";
 
 const AboutHeader = () => {
