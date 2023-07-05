@@ -1,4 +1,4 @@
-.header-content {
+.homeheader-content {
     min-height: 85vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/page0.jpg");
     background-size: cover;
@@ -9,13 +9,13 @@
     justify-content: center;
   }
 
-  .header-title {
+  .homeheader-title {
     font-size: 5.2rem;
     color: #fff;
     text-align: center;
   }
 
-  .header-text {
+  .homeheader-text {
     margin-top: -1.8rem;
     margin-bottom: 2.8rem;
     opacity: 0.8;
