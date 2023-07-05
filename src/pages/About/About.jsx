@@ -1,9 +1,11 @@
 import React from 'react';
 import "./About.css";
 import aboutImg from "../../images/about.jpg";
-
+import AboutHeader from "../Header/AboutHeader";
 const About = () => {
   return (
+    <>
+    <AboutHeader/>
     <section className='about'>
       <div className='container'>
         <div className='section-title'>
@@ -21,6 +23,7 @@ const About = () => {
         </div>
       </div>
     </section>
+    </>
   )
 }
 
