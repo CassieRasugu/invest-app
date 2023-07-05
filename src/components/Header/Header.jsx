@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from "../Navbar/Navbar";
-import "./HomeHeader.css";
+import "./Header.css";
 const Header = () => {
     return (
       <div className='holder'>
@@ -15,4 +15,4 @@ const Header = () => {
     )
   }
 
-  export default HomeHeader
+  export default Header

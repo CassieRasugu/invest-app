@@ -1,11 +1,10 @@
 import React from 'react';
 import "./About.css";
 import aboutImg from "../../images/about.jpg";
-import AboutHeader from "../../components/Header/AboutHeader";
 const About = () => {
   return (
     <>
-    <AboutHeader/>
+
     <section className='about'>
       <div className='container'>
         <div className='section-title'>
