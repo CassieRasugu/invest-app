@@ -29,7 +29,7 @@ const Navbar = () => {
               <Link to = "home" className='nav-link blue text-uppercase  fs-22 fw-6 ls-1'>Home</Link>
             </li>
             <li className='nav-item'>
-              <Link to = "signup" className='nav-link blue text-uppercase fs-22 fw-6 ls-1'>SignUp</Link>
+              <Link to = "registration" className='nav-link blue text-uppercase fs-22 fw-6 ls-1'>Registration</Link>
             </li>
             <li className='nav-item'>
               <Link to = "profile" className='nav-link blue text-uppercase  fs-22 fw-6 ls-1'>Userprofile</Link>
