@@ -1,24 +1,20 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Registration.css";
 
-
-const Registration = () => {
+const RegistrationForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [typeOfInvestment, setTypeOfInvestement] = useState("");
   const [location, setLocation] = useState("");
-  const [country, setCountry] = useState("");
-  const [dateOfBirth, setDateOfBirth] = useState("");
-  const [typeOfInvestment, setTypeOfInvestement] =useState("")
-
+  const [gender, setGender] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:3001/registration", {
+    fetch("http://127.0.0.1:3000/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,18 +23,16 @@ const Registration = () => {
         name: name,
         email: email,
         password: password,
-        confirmPassword: confirmPassword,
+        confirm_Password: confirmPassword,
+        type_of_Investment: typeOfInvestment,
+        gender: gender,
         location: location,
-        country: country,
-        dateOfBirth: dateOfBirth,
-        typeOfInvestment : typeOfInvestment
       }),
     })
       .then((resp) => resp.json())
       .then((data) => {
         console.log(data);
-
-        navigate('/Login');
+        navigate("/Login");
       });
   };
 
@@ -102,23 +96,12 @@ const Registration = () => {
         </div>
 
         <div>
-          <label htmlFor="country">Country:</label>
+          <label htmlFor="gender">Gender:</label>
           <input
             type="text"
-            id="country"
-            value={country}
-            onChange={(e) => setCountry(e.target.value)}
-            required
-          />
-        </div>
-
-        <div>
-          <label htmlFor="dateOfBirth">Date of Birth:</label>
-          <input
-            type="date"
-            id="dateOfBirth"
-            value={dateOfBirth}
-            onChange={(e) => setDateOfBirth(e.target.value)}
+            id="gender"
+            value={gender}
+            onChange={(e) => setGender(e.target.value)}
             required
           />
         </div>
@@ -131,62 +114,10 @@ const Registration = () => {
             <option value={'Bonds'}>Bonds</option>
           </select>
         </div>
-
         <button type="submit">Register</button>
       </form>
     </>
   );
 };
 
-
-// const App = () => {
-//   const handleMenuOne = () => {
-//     console.log('clicked one');
-//   };
-
-//   const handleMenuTwo = () => {
-//     console.log('clicked two');
-//   };
-
-//   return (
-//     <Dropdown
-//       trigger={<button>Type of Investment</button>}
-//       menu={[
-//         <button onClick={handleMenuOne}>Shares</button>,
-//         <button onClick={handleMenuTwo}>Bills</button>,
-//         <button onClick={handleMenuTwo}>Bonds</button>,
-//       ]}
-//     />
-//   );
-// };
-
-// const Dropdown = ({ trigger, menu }) => {
-//   const [open, setOpen] = React.useState(false);
-
-//   const handleOpen = () => {
-//     setOpen(!open);
-//   };
-
-//   return (
-//     <div className="dropdown">
-//       {React.cloneElement(trigger, {
-//         onClick: handleOpen,
-//       })}
-//       {open ? (
-//         <ul className="menu">
-//           {menu.map((menuItem, index) => (
-//             <li key={index} className="menu-item">
-//               {React.cloneElement(menuItem, {
-//                 onClick: () => {
-//                   menuItem.props.onClick();
-//                   setOpen(false);
-//                 },
-//               })}
-//             </li>
-//           ))}
-//         </ul>
-//       ) : null}
-//     </div>
-//   );
-// };
-export default Registration;
+export default RegistrationForm;
